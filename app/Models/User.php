@@ -40,4 +40,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
     ];
+
+    public function peminjamans(){
+        return $this->hasMany(Peminjaman::class);
+    }
 }
