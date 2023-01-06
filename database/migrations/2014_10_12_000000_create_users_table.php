@@ -24,8 +24,8 @@ class CreateUsersTable extends Migration
             $table->text('alamat')->nullable();
             $table->string('verif',50)->default('verifed');
             $table->enum('role', ['admin', 'user']);
-            $table->date('join_date');
-            $table->string('terakhir_login',125)->nullable();
+            $table->dateTime('join_date')->nullable();;
+            $table->dateTime('terakhir_login')->nullable();
             $table->text('foto')->nullable();
             $table->timestamps();
         });

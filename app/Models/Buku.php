@@ -18,5 +18,6 @@ class Buku extends Model
         'isbn',
         'j_buku_baik',
         'j_buku_rusak',
+        'foto'
     ];
 }

@@ -14,5 +14,6 @@ class Identitas extends Model
         'alamat_app',
         'email_app',
         'nomor_hp',
+        'foto'
     ];
 }

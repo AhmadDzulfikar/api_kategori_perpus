@@ -21,8 +21,8 @@ class CreateBukusTable extends Migration
             $table->string('pengarang', 125);
             $table->year('tahun_terbit');
             $table->string('isbn', 50)->nullable();
-            $table->integer('j_buku_baik');
-            $table->integer('j_buku_rusak');
+            $table->smallInteger('j_buku_baik');
+            $table->smallInteger('j_buku_rusak');
             $table->text('foto')->nullable();
             $table->timestamps();
         });
