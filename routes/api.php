@@ -20,3 +20,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('user', [App\Http\Controllers\API\UserController::class, 'index']);
+
+Route::get('pesan', [App\Http\Controllers\Api\PesanApiController::class, 'index']);
+Route::post('pesan', [App\Http\Controllers\Api\PesanApiController::class, 'store']);
+Route::post('pesan/update/{id}', [App\Http\Controllers\Api\PesanApiController::class, 'update']);
+// Route::post('kategori', [App\Http\Controllers\Api\KategoriApiController::class, 'store']);
+Route::get('kategori', [App\Http\Controllers\Api\KategoriApiController::class, 'index']);
+Route::delete('kategori/delete/{id}', [App\Http\Controllers\Api\KategoriApiController::class, 'destroy']);
+Route::delete('pesan/delete/{id}', [App\Http\Controllers\Api\PesanApiController::class, 'destroy']);
